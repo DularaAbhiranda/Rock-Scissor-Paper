@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .player,
+  .computer {
+    flex: 1;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 50px;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  
+  /* Animation */
+  @keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(20deg); }
+    50% { transform: rotate(-20deg); }
+    75% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  button.shake {
+    animation: shake 0.5s ease;
+  }
+  
+  

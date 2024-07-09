@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rock Paper Scissors</h1>
+    <div class="game">
+      <div class="player">
+        <h2>You</h2>
+        <div class="choices">
+          <button onclick="playerChoice('rock')"><i class="fas fa-hand-rock"></i></button>
+          <button onclick="playerChoice('paper')"><i class="fas fa-hand-paper"></i></button>
+          <button onclick="playerChoice('scissors')"><i class="fas fa-hand-scissors"></i></button>
+        </div>
+      </div>
+      <div class="versus">
+        <h2>VS</h2>
+      </div>
+      <div class="computer">
+        <h2>Computer</h2>
+        <div class="choices">
+          <button id="rock"><i class="fas fa-hand-rock"></i></button>
+          <button id="paper"><i class="fas fa-hand-paper"></i></button>
+          <button id="scissors"><i class="fas fa-hand-scissors"></i></button>
+        </div>
+      </div>
+    </div>
+    <div id="result"></div>
+
+    <!-- Point Table -->
+
+    <!-- Point Table -->
+    <h2>Point Table</h2>
+    <table id="pointTable">
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Computer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="playerPoints">0</td>
+          <td id="computerPoints">0</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
